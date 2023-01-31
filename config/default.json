@@ -1,0 +1,4 @@
+{
+  "mongoURI": "mongodb+srv://jazz:Mpower123@cluster0.elaclgy.mongodb.net/?retryWrites=true&w=majority",
+  "JWTsecretToken": "cyprodev"
+}

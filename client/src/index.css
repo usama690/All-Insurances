@@ -1,0 +1,5 @@
+.MuiSlider-rail,
+.MuiSlider-track {
+  background-color: #6A6A6A !important;
+  opacity: 1 !important;
+}

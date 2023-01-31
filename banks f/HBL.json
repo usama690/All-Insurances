@@ -1,0 +1,62 @@
+{
+    "AUTO_LOAN": [
+        {
+            "Criteria For Salaried INDIVIDUALS:": "Applicant must be a Pakistani citizen. \nApplicant to be 22 years or more at the time of loan application and max 60 or retirement age whichever is lower, \nMinimum monthly income to be PKR 20,000."
+        },
+        {
+            "Criteria For Self Employed Business Persons/Professionals": "Applicant must be a Pakistani citizen. \nApplicant to be 22 years or more at the time of loan application and max 70 years or less at the time of maturity , \nMinimum monthly income to be PKR 25,000."
+        },
+        {
+            "Features": "Financing limit between PKR 200,000 to PKR 3,000,000.Repay within a 5 year time period Choose any type of locally manufactured vehicle, new or used.Receive financing up to 70% of the value of preferred car. Secured insurance at all times for peace of mind (with tracker facility).  Multiple Partial payment facility as per your convenience .Our network of over 150 eligible dealers means you have lots of brands and cars to choose from  .HBL has over 1600 branches, you can apply for CarLoan as per your convenience by visiting your nearest branch or through other alternate channels 24/7 support available through HBL Phone Banking"
+        },
+        {
+            "Documents Requirments": "SALARIED INDIVIDUALS TO PROVIDE: Original copy of CNIC along with verified copy, \nTwo recent passport size photographs , \nLatest original salary slip and personal bank statement for last three months",
+            "Self Employed Business Persons/Professionals To Provide:": "Original copy of CNIC along with verified copy , \nTwo recent passport size photographs, \nBank statement for last 6 months and bank letter confirming details of account, Proof of occupation / business"
+        }
+    ],
+    "CREDIT_CARDS": [
+        {
+            "Visa Debit Card ": "Want access to your money anytime, anywhere? With a Meezan Visa Debit Card, you have access to the money in your account wherever you are, whenever you want, wherever you see the Visa symbol. The money is deducted from your balance straight away \u2014 there is no interest to pay, no bills & no late fees!"
+        },
+        {
+            "Titanium MasterCard Debit Card": "More than just an ATM card, you can use your Meezan Titanium MasterCard Debit Card wherever MasterCard is accepted. Whether you want to pay for fuel, shopping, dining or anything else, you can easily use  your Meezan Titanium MasterCard Debit Card to access the funds in your account rather than carrying cash."
+        },
+        {
+            "Platinum MasterCard Debit Card": "The Platinum MasterCard Debit Card opens a world of convenience for customers by giving them access to 2.1 million MasterCard compatible ATMs and 32 million Merchants in Pakistan and around the world. Our customers can shop, dine, travel and refuel whenever they want, wherever they want. Platinum card holders also get free access to International CIP lounges as well as higher withdrawal and POS transaction limits. "
+        },
+        {
+            "Meezan Visa Infinite Debit Card": "There is something that sets you apart. It is your character \u2013 the inner you who dares to dream and chases ambition, pushing you to prosper in every endeavour. Meezan Visa Infinite Debit Card bears testimony to the achievements you have already accomplished and serves as a hallmark of the distinct path you continue to walk."
+        },
+        {
+            "Meezan World Debit Card": "The Meezan World Debit Card offers a world of unparalleled exclusivity and convenience. Unlock a global suite of the finest benefits and privileges designed specifically to complement your preferences. With a host of travel and lifestyle offers coupled with unprecedented spending limits, the Meezan World Debit Card is the perfect companion for the  frequent flyer."
+        }
+    ],
+    "LIFE_INSURANCE": [
+        {
+            "Investment Funds": "Managed, Messaq, Yaqeen & Capital"
+        },
+        {
+            "Age Entry ": "18-65 years nearest birthday"
+        },
+        {
+            "Available Payment And Range ": "10-57 years"
+        },
+        {
+            "Partial Surrender Benefits ": "Partial Surrender Benefits (available after completion of two years)Bid Value of Units requested for Partial Withdrawal. Amount of Partial Surrender may be subject to minimum amount and residual value determined by the Company."
+        },
+        {
+            "Applicable Charges ": "Offer Spread: 5%  Management Charge: 1.5% of Fund Value per year Administration Fee: Rs 145 per month (Currently Available)"
+        },
+        {
+            "Jubilee Life Insurance ": "Jubilee BetterLife Savings Plan by JLI Life is your family's lifeline. Providing financial security to your loved ones even through tough times. It is a unit linked endowment plan that helps you save regular amounts today to meet your financial needs tomorrow, while simultaneously providing you with life insurance protection. It is a useful yet affordable plan that helps your family financially in unfortunate circumstances. "
+        }
+    ],
+    "PERSONAL_LOAN": [
+        {
+            "Features": "Financing limit between PKR 25,000 to PKR 3,000,000 , Repayment tenure(s) ranging from 12 to 48 months Availability of top-up facility after every 12 months Life insurance coverage"
+        },
+        {
+            "Criteria": "Salaried individual whose salary is being credited to HBL account, Applicant to be 21 years or more at the time of loan application and 60 years or less at the time of loan maturity"
+        }
+    ]
+}

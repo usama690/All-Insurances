@@ -1,0 +1,66 @@
+{
+    "AUTO_LOAN": [
+        {
+            "Eligibility": "Net Income: PKR 40,000 per month \nMinimum Age Requirement: 21 years \nMaximum Age (at loan maturity): 65 years (salaried) and 70 (Self Employed) \nEmployment Length: Minimum: 6 months employment (salaried) \nBusiness Length: Minimum: 1 year business (self-employed), \nMinimum 6 months remittance history through banking channel (Foreign Remittance Segment)"
+        },
+        {
+            "Features": "\nCompetitive Pricing\nFinance Tenor: Up to 5 years\nYou can finance new, used, local as well as imported cars\nFinance up to 70% of vehicle value*\nComprehensive insurance\nOption to finance a second or third car\nPrepayment Option: allows you to prepay part of full amount of the loan after incurring prepayment charge.\nThrough facility repayment option, upgrade your existing cars loan with a new loan with no penalty\n"
+        },
+        {
+            "Document": "\nCopy of CNIC\n2 passport sized recent photographs\nBank statement (6 month to 1 year)\nSalary slip/ proof of business or other documents\n"
+        },
+        {
+            "Markup Rates": "Tenor (Years):'0':'1 - 5','1':'6 - 7',\nMCB Account Holders (ETB):'0':'1Yr KIBOR + 4 %','1':'1Yr KIBOR + 5% ,\nNon-MCB Account Holders (NTB):'0':'1Yr KIBOR + 4.5%','1':'1Yr KIBOR + 5.5%'"
+        }
+    ],
+    "CREDIT_CARDS": [
+        {
+            "Visa Debit Card ": "Want access to your money anytime, anywhere? With a Meezan Visa Debit Card, you have access to the money in your account wherever you are, whenever you want, wherever you see the Visa symbol. The money is deducted from your balance straight away \u2014 there is no interest to pay, no bills & no late fees!"
+        },
+        {
+            "Titanium MasterCard Debit Card": "More than just an ATM card, you can use your Meezan Titanium MasterCard Debit Card wherever MasterCard is accepted. Whether you want to pay for fuel, shopping, dining or anything else, you can easily use  your Meezan Titanium MasterCard Debit Card to access the funds in your account rather than carrying cash."
+        },
+        {
+            "Platinum MasterCard Debit Card": "The Platinum MasterCard Debit Card opens a world of convenience for customers by giving them access to 2.1 million MasterCard compatible ATMs and 32 million Merchants in Pakistan and around the world. Our customers can shop, dine, travel and refuel whenever they want, wherever they want. Platinum card holders also get free access to International CIP lounges as well as higher withdrawal and POS transaction limits. "
+        },
+        {
+            "Meezan Visa Infinite Debit Card": "There is something that sets you apart. It is your character  the inner you who dares to dream and chases ambition, pushing you to prosper in every endeavour. Meezan Visa Infinite Debit Card bears testimony to the achievements you have already accomplished and serves as a hallmark of the distinct path you continue to walk."
+        },
+        {
+            "Meezan World Debit Card": "The Meezan World Debit Card offers a world of unparalleled exclusivity and convenience. Unlock a global suite of the finest benefits and privileges designed specifically to complement your preferences. With a host of travel and lifestyle offers coupled with unprecedented spending limits, the Meezan World Debit Card is the perfect companion for the  frequent flyer."
+        }
+    ],
+    "PERSONAL_LOAN": [
+        {
+            "Features": "\nMCB Home loans are available on very competitive pricing\nFlexibility to borrow funds - 2 - 25 years\nYou can buy a house, buy a plot and construct a house or construct a house on your existing plot\nYou can also renovate your existing home through MCB\nFinancing for Low Cost Housing for Special segment is also available. Please click here for eligibility and further information.\nBroad range of financing available \u2013 Upto PKR 50 Million (or even higher)\n"
+        },
+        {
+            "Eligibility": "\nNet Income (Salaried Customers): PKR 40,000 per month\nNet income (Self-Employed Customers): PKR 55,000 per month\nMinimum Age: 25 years for Primary Borrower & 22 years for Joint Borrower\nMaximum Age: For Primary Borrower & Joint Borrower - At the time of loan maturity, 60 years or retirement age (whichever is lower) for salaried individuals and 65 years for Self-Employed\nEmployment Length: 2 years for Salaried and 3 years for Self-employed Professional/Businessman\nOne Year Bank Statement required for all segments\n"
+        },
+        {
+            "Documents": "\nApplication form\nCopy of valid and original CNIC/SNIC\nTwo passport size photographs\nDeclaration of all financing facilities availed from all banks/DFIs\nIncome documents\nBusiness /employment proof\nCopy of property documents\nAny other document required by the Bank\n"
+        }
+    ],
+    "LIFE_INSURANCE": [
+        {
+            "Applicable Ages And Terms": "Plans are available to individuals aged 18 years to 70 years, inclusive.,Family includes self, spouse and unlimited children. Age of spouse must be between 18 years to 70 years. Only child(ren) up to 22 years and 364 days are covered if child(ren) continues to be single, full-time student and economically dependent on their parents."
+        },
+        {
+            "Features": "Lowest ever premium: Rs. 6 per day,Highest protection up to: Rs. 7,500,000,14-day free trial period.,No medical tests required.,Covers your entire family.,"
+        },
+        {
+            "Details": "Because life is so unpredictable accidents can happen when you least expect them. An accident can have a serious financial impact and we may have never thought about the financial consequences to us and our family if we were involved in a serious accident.  "
+        }
+    ],
+    "MCB_personal_loan": [
+        {
+            "Key Features": "\nMinimum Loan Amount: PKR 50,000\nMaximum Loan Amount: Up to PKR 2 Million\nTenure: 1 year to 4 years\nNo collateral required\nNo processing fee if loan is not approved\nApproved Cities: Karachi, Lahore, Rawalpindi, Islamabad, Faisalabad, Hyderabad, Multan, Peshawar, Sialkot, Bahawalpur, Abbotabad, Jhelum & Wah Cantt."
+        },
+        {
+            "Eligibility *": "\nSalaried individuals working in the Private sector, Government of Pakistan and Armed Forces *\nAny person who has taken a credit card, personal loan or an overdraft facility from any bank in Pakistan.\nAn existing MCB Car4U customer who took the MCB car loan more than 1 year ago*\nAny MCB salaried customer whose salary has been being credited in MCB for more than a year"
+        },
+        {
+            "Initial Documents:": "\nCopy of Salary slip/ Proof of income\nCopy of Valid CNIC"
+        }
+    ]
+}
