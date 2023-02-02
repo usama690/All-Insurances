@@ -103,7 +103,6 @@ const App = () => {
               <Route path="insurances" element={<Insurance />} />
               <Route path="insurances/:type/:bankName" element={<InsuranceType />} />
               <Route path="insurances/:type" element={<InsuranceList />} />
-              <Route path="carloan" element={<CarLoanCalculator />} />
               <Route
                 path="insurance-details/:id"
                 element={<InsuranceDetails />}
