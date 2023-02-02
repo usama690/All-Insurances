@@ -48,11 +48,7 @@ const PrettoSlider = styled(Slider)({
   },
 });
 
-const RootBox = styled(Box)(
-  `background:black;
-    height:100vh
-    `
-);
+const RootBox = styled(Box)();
 
 const options = [
   {
@@ -69,9 +65,33 @@ const options = [
   },
 ];
 
-const CarLoanCalculator = () => {
-  const [customerCategory, setCustomerCategory] = useState('');
-  const [vehiclePrice, setVehiclePrice] = useState(200000);
+const CarLoanCalculator = ({bank_name}) => {
+
+  let vehicleAmount = 0
+  let bankName = ''
+  if(bank_name === 'alfalah')  {
+    vehicleAmount = 200000
+    bankName = 'ALFALAH'
+  } 
+  if(bank_name === 'faisal'){
+    vehicleAmount = 180000
+    bankName = 'FAISAL'
+  }  
+  if(bank_name === 'hbl') {
+    vehicleAmount = 150000
+    bankName = 'HBL'
+  }
+  if(bank_name === 'mcb'){
+    vehicleAmount = 130000
+    bankName = 'MCB'
+  } 
+  if(bank_name === 'meezan') {
+    vehicleAmount = 100000
+    bankName = 'MEEZAN'
+  }  
+  
+  const [customerCategory, setCustomerCategory] = useState(options[0].value);
+  const [vehiclePrice, setVehiclePrice] = useState(vehicleAmount);
   const [toRepayIn, setToRepayIn] = useState(12); // months
   const [securityDeposit, setSecurityDeposit] = useState(15); // percentage
   const [secDepVal, setSecDepVal] = useState(0); // security deposit amount
@@ -121,20 +141,20 @@ const CarLoanCalculator = () => {
 
   return (
     <RootBox paddingTop="2rem">
-      <Typography textAlign={"center"} variant="h4" color="#00C09A">
-        {" "}
-        HBL CARLOAN{" "}
+      <Typography textAlign={"center"} variant="h4" color="black">
+        {bankName} BANK CARLOAN CALCULATOR
       </Typography>
-      <Box display="flex" width="60%" margin="auto" flexDirection="column">
-        <Box style={{margin:"5px"}}width="100%">
-          <Typography variant="h6" color="#00C09A" fontWeight="700">
+      <Box display="flex" width="60%" margin="auto" flexDirection="column" marginTop="2rem">
+        <Box margin="5px" width="100%">
+          <Typography variant="h6" color="black" fontWeight="700" marginBottom="10px">
             CUSTOMER CATEGORY
           </Typography>
           <Select
             variant="standard"
+            displayEmpty
             value={customerCategory}
             onChange={handleChange}
-            style={{color:"white",borderBottom:"1px solid",width:"100%"}}
+            style={{ color: "black", borderBottom: "1px solid", width: "100%",background:"transparent" }}
             label="Age"
           >
             {options.map((item, index) => (
@@ -145,17 +165,17 @@ const CarLoanCalculator = () => {
           </Select>
         </Box>
 
-        <Box>
-          <Typography color="#00C09A">VEHICLE PRICE</Typography>
-          <Box display="flex">
-            <Box width="85%">
+        <Box marginTop="1.5rem">
+          <Typography color="black">VEHICLE PRICE</Typography>
+          <Box display="flex" gap="3rem" >
+            <Box width="80%">
               <PrettoSlider
-                style={{ width: "98%" }}
+                style={{ width: "100%" }}
                 aria-label="pretto slider"
                 onChange={handleVehiclePriceChange}
                 value={vehiclePrice}
                 step={100000}
-                min={200000}
+                min={vehicleAmount}
                 max={10000000}
               />
             </Box>
@@ -164,24 +184,24 @@ const CarLoanCalculator = () => {
               justifyContent="space-between"
               alignItems="center"
               border="1px solid #2f3132"
-              width="15%"
+              width="20%"
               height="30px"
               padding="0 7px"
             >
               {" "}
-              <Typography variant="caption" color="white">
+              <Typography variant="caption" color="black">
                 PKR
               </Typography>{" "}
-              <Typography color="#00C09A">{vehiclePrice}</Typography>{" "}
+              <Typography color="black">{vehiclePrice}</Typography>{" "}
             </Box>
           </Box>
         </Box>
-        <Box>
-          <Typography color="#00C09A"> TO REPAY IN</Typography>
-          <Box display="flex">
-            <Box width="85%">
+        <Box marginTop="1rem" >
+          <Typography color="black"> TO REPAY IN</Typography>
+          <Box display="flex" gap="3rem">
+            <Box width="80%">
               <PrettoSlider
-                style={{ width: "98%" }}
+                style={{ width: "100%" }}
                 aria-label="pretto slider"
                 onChange={handleMonthChange}
                 step={12}
@@ -194,25 +214,25 @@ const CarLoanCalculator = () => {
               justifyContent="space-between"
               alignItems="center"
               border="1px solid #2f3132"
-              width="15%"
+              width="20%"
               height="30px"
               padding="0 7px"
             >
               {" "}
-              <Typography variant="caption" color="white">
+              <Typography variant="caption" color="black">
                 MONTHS
               </Typography>{" "}
-              <Typography color="#00C09A">{toRepayIn}</Typography>{" "}
+              <Typography color="black">{toRepayIn}</Typography>{" "}
             </Box>
           </Box>
         </Box>
 
-        <Box>
-          <Typography color="#00C09A"> SECURITY DEPOSIT</Typography>
-          <Box display="flex">
+        <Box marginTop="1rem">
+          <Typography color="black"> SECURITY DEPOSIT</Typography>
+          <Box display="flex" gap="3rem">
             <Box width="80%">
               <PrettoSlider
-                style={{ width: "98%" }}
+                style={{ width: "100%" }}
                 aria-label="pretto slider"
                 onChange={handlePercentChange}
                 step={5}
@@ -230,44 +250,45 @@ const CarLoanCalculator = () => {
               padding="0 7px"
             >
               {" "}
-              <Typography variant="caption" color="white">
+              <Typography variant="caption" color="black">
                 PERCENTAGE
               </Typography>{" "}
-              <Typography color="#00C09A">{securityDeposit}%</Typography>{" "}
+              <Typography color="black">{securityDeposit}%</Typography>{" "}
             </Box>
           </Box>
         </Box>
 
-        <Box className="d-flex text-white">
-          <Box>
-            <Typography>YOUR</Typography>
-            <Typography>MONTHLY</Typography>
-            <Typography>INSTALLMENTS</Typography>
-            <Typography>WILL BE JUST</Typography>
+        <Box display="flex" marginTop="2rem" >
+          <Box borderRight="1px solid gray">
+            <Typography textAlign="right" paddingRight="10px" >YOUR</Typography>
+            <Typography textAlign="right" paddingRight="10px" >MONTHLY</Typography>
+            <Typography textAlign="right" paddingRight="10px">INSTALLMENTS</Typography>
+            <Typography textAlign="right" paddingRight="10px">WILL BE JUST</Typography>
           </Box>
-          <span style={{borderLeft:"1px solid",height:"90px",position:"absolute",left:"30%",marginLeft:".5%",marginRight:".7%"}}/>
-          &nbsp;&nbsp;&nbsp;
-          <Box>
-            <Typography>PKR</Typography>
-            <Typography color="#00C09A">{install}</Typography>
+          <Box paddingTop="15px" paddingLeft="8px" paddingRight="7rem" borderRight="1px solid gray" >
+            <Typography variant="caption" color="black">
+              PKR
+            </Typography>
+            <Typography color="black">{install}</Typography>
           </Box>
-          <span color="#00C09A" />
-          <Box className="ms-5">
-            <Typography>FINANCED AMOUNT</Typography>
+
+          <Box display="flex" alignItems="flex-end" gap="3rem" paddingLeft="8px" >
             <Box>
-              {" "}
-              <Typography>PKR</Typography>{" "}
-              <Typography color="#00C09A">{financedAmount}</Typography>
+              <Typography textAlign="center" >FINANCED AMOUNT</Typography>
+              <Box display="flex" justifyContent="space-between" border="1px solid #2f3132" alignItems="center" padding="0 5px" width="200px"  >
+                <Typography variant="caption"  >PKR</Typography>
+                <Typography color="black">{financedAmount}</Typography>
+              </Box>
+            </Box>
+            <Box>
+              <Typography textAlign="center" >SECURITY DEPOSIT</Typography>
+              <Box display="flex" justifyContent="space-between" border="1px solid #2f3132" alignItems="center" padding="0 5px" width="200px"  >
+                <Typography variant="caption">PKR</Typography>
+                <Typography color="black">{secDepVal}</Typography>
+              </Box>
             </Box>
           </Box>
-          <Box className="ms-4">
-            <Typography>SECURITY DEPOSIT</Typography>
-            <Box>
-              {" "}
-              <Typography>PKR</Typography>{" "}
-              <Typography color="#00C09A">{secDepVal}</Typography>
-            </Box>
-          </Box>
+
         </Box>
 
       </Box>
