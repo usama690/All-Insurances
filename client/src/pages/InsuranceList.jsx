@@ -62,11 +62,11 @@ const InsuranceList = ({
         <br />
 
         <div className="d-flex justify-content-between align-items-center" >
-          <div onClick={() => handleClick("alfalah")} style={{ width: '150px', height: '100px' }} ><img src={require('../assets/bank-alfalah-logo.jpg')} style={{ width: "100%", height: '100%' }} alt="" /></div>
-          <div onClick={() => handleClick("faisal")} style={{ width: '150px', height: '90px' }} ><img src={require('../assets/faisal_bank.png')} style={{ width: "100%", height: '100%' }} alt="" /></div>
-          <div onClick={() => handleClick("hbl")} style={{ width: '150px', height: '70px' }} ><img src={require('../assets/hbl.png')} style={{ width: "100%", height: '100%' }} alt="" /></div>
-          <div onClick={() => handleClick("mcb")} style={{ width: '150px', height: '100px' }} ><img src={require('../assets/mcb.png')} style={{ width: "100%", height: '100%' }} alt="" /></div>
-          <div onClick={() => handleClick("meezan")} style={{ width: '200px', height: '100px' }} ><img src={require('../assets/meezan.png')} style={{ width: "100%", height: '100%' }} alt="" /></div>
+          <div onClick={() => handleClick("alfalah")} style={{ width: '150px', height: '100px', cursor:'pointer' }} ><img src={require('../assets/bank-alfalah-logo.jpg')} style={{ width: "100%", height: '100%' }} alt="" /></div>
+          <div onClick={() => handleClick("faisal")} style={{ width: '150px', height: '90px', cursor:'pointer' }} ><img src={require('../assets/faisal_bank.png')} style={{ width: "100%", height: '100%' }} alt="" /></div>
+          <div onClick={() => handleClick("hbl")} style={{ width: '150px', height: '70px', cursor:'pointer' }} ><img src={require('../assets/hbl.png')} style={{ width: "100%", height: '100%' }} alt="" /></div>
+          <div onClick={() => handleClick("mcb")} style={{ width: '150px', height: '100px', cursor:'pointer' }} ><img src={require('../assets/mcb.png')} style={{ width: "100%", height: '100%' }} alt="" /></div>
+          <div onClick={() => handleClick("meezan")} style={{ width: '200px', height: '100px', cursor:'pointer' }} ><img src={require('../assets/meezan.png')} style={{ width: "100%", height: '100%' }} alt="" /></div>
         </div>
 
         {/* {!loading &&
