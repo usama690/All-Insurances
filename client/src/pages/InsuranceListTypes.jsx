@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useEffect } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { getInsurances } from "../actions/insurance";
@@ -9,6 +9,7 @@ import InsuranceCard from "../Components/InsuranceCard";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import axios from "axios";
+import CarLoanCalculator from "./CarLoanCalculator";
 
 const InsuranceType = ({
     getInsurances,
@@ -16,6 +17,7 @@ const InsuranceType = ({
 }) => {
     const navigate = useNavigate()
     const location = useLocation()
+    const [show, setShow] = useState(false)
 
     useEffect(() => {
         getInsurances();
@@ -25,10 +27,10 @@ const InsuranceType = ({
     console.log(location.state.data.data)
 
     let type = ""
-    if(location.state.data.type === "car-loans") type = "Car Loans"
-    if(location.state.data.type === "credit-cards") type = "Credit Cards"
-    if(location.state.data.type === "life-insurance") type = "Life Insurance"
-    if(location.state.data.type === "personal-loans") type = "Personal Loans"
+    if (location.state.data.type === "car-loans") type = "Car Loans"
+    if (location.state.data.type === "credit-cards") type = "Credit Cards"
+    if (location.state.data.type === "life-insurance") type = "Life Insurance"
+    if (location.state.data.type === "personal-loans") type = "Personal Loans"
 
     return (
         <>
@@ -50,19 +52,18 @@ const InsuranceType = ({
                     ></path>
                 </svg>
             </div>
-            <section className="container p-5 mb-5">
+            {!show ? <section className="container p-5 mb-5">
                 <h1>{type} - {location.state.bank_name}</h1>
                 <br />
 
                 <div>
-
                     {
                         location?.state?.data?.data?.map((item, index) => {
                             const keys = Object.keys(item)
                             console.log(keys)
                             return <>
                                 <h3>{keys[0]} : </h3>
-                                <p>{ item[keys[0]] }</p>
+                                <p>{item[keys[0]]}</p>
                             </>
                         }
                         )
@@ -70,25 +71,9 @@ const InsuranceType = ({
 
                 </div>
 
-                {/* {!loading &&
-        insurances &&
-        insurances.filter((insurance) => insurance.insuranceType === type)
-          .length > 0 ? (
-          insurances
-            .filter((insurance) => insurance.insuranceType === type)
-            .map(({ _id, title, description, insuranceType }) => (
-              <InsuranceCard
-                id={_id}
-                title={title}
-                description={description}
-                type={insuranceType}
-              />
-            ))
-        ) : (
-          <>Sorry! No insurances available at the moment.</>
-        )} */}
-                {/* */}
-            </section>
+                <div className="text-center mt-5"> <button onClick={() => setShow(true)} className="py-2 px-3" >CARLOAN CALCULATOR</button> </div>
+
+            </section> : <CarLoanCalculator bank_name={location.state.bank_name} />}
             <Footer />
         </>
     );
